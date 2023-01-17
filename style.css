@@ -1,10 +1,150 @@
-body{
-    background-image: url('./img/bg-01.jpg');
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&display=swap');
+
+
+  /*
+  Paletas 
+  Rosa suave: #fcc9d9;
+  Celeste: #a9dfe2;
+  Azul: #5c6898;
+  Lila: #d1d5fa;
+  */
+*{
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-repeat: repeat-y;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    
 }
 
-.ri-menu-line{
-    color: rgb(133, 21, 123);
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #d1d5fa;
+    
+}
+
+
+.container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #5c6898;
+    
+/* background: linear-gradient(180deg, rgba(2,0,36,1) 10%, rgba(179,179,179,0.5721638997395833) 100%); */
+
+}
+
+.container header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    
+    
+}
+
+.container header .logo a{
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color:#fcc9d9
+}
+
+
+.container header ul{
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.container header nav ul li a{
+    text-align: none;
+    font-weight: 300;
+    color: whitesmoke;
+    margin: 0 15px;
+    padding: 3px;
+   transition: .5s;
+   text-decoration: none;
+}
+
+.container header nav ul li a:hover{
+    color:#a9dfe2;
+
+}
+
+.menu-responsive{
+    background-color:#fdb3ca;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*INICIO*/
+
+.inicio{
+    color: #5c6898;
+    display: flex;
+    align-items: center;
+}
+
+.inicio div h1{
+    font-weight: 800;
+}
+
+.inicio div h2{
     font-weight: 600;
+}
+
+.inicio div img{
+    max-width: 400px;
+    margin-top: 50px;
+    display: block;
+    
+}
+
+.inicio .contenido-banner{
+    background-color: #fcc9d9 ;
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 80px;
+    text-align: center;
+}
+
+.inicio .contenido-banner .redes {
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 12px;
+}
+
+.inicio .contenido-banner .redes a{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    font-size: 40px;
+    transition: .3s;
+    
+}
+
+.inicio .contenido-banner .redes a:hover{
+   background-color:#a9dfe2 ;
+    
 }
