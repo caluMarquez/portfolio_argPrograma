@@ -1,0 +1,10 @@
+body{
+    background-image: url('./img/bg-01.jpg');
+    font-family: 'Nunito', sans-serif;
+    background-repeat: repeat-y;
+}
+
+.ri-menu-line{
+    color: rgb(133, 21, 123);
+    font-weight: 600;
+}
