@@ -148,3 +148,365 @@ padding: 12px;
    background-color:#a9dfe2 ;
     
 }
+
+.about{
+    background-color: #5c6898;
+    color: whitesmoke;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.about .contenido-about{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.about h2{
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+
+.about .contenido-about p{
+    line-height: 22px;
+    font-weight: 300;
+    
+}
+
+.about .contenido-about p span{
+    color:#fdb3ca; 
+    font-weight: 700;
+}
+
+.about .fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.about .fila h3{
+    color: #a9dfe2;
+    font-weight: 600;
+    margin: 30px;
+    
+}
+
+.about .fila .col ul{
+    list-style: none;
+}
+
+.about .fila .col ul li{
+    margin: 10px 0px;
+}
+
+.about .fila .col ul li strong{
+    font-weight: 800;
+    display: inline-block;
+    width: 130px;
+}
+
+.about .fila .col .contenedor-intereses{
+  display: flex;
+flex-wrap: wrap;
+}
+
+.about .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #d1d5fa;
+    border-radius: 15px;
+    margin: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+    color: #5c6898;
+    
+  }
+  
+  .about .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #a9dfe2;
+  }
+
+  .about .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    }
+
+    .about button{
+
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #d1d5fa;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-weight: 700;
+        color: whitesmoke;
+        font-size: 20px;
+
+    }
+
+
+
+.about .centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+
+
+    .about button:hover{
+        background-color: #a9dfe2;
+        color: #5c6898;
+        border: none;
+    }
+
+
+    /*SKILLS*/
+
+  
+    
+    .skills .contenido-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .contenido-section h2{
+       
+        width: 150px;
+        text-align: center;
+        margin: 15px;
+        background-color: #5c6898;
+        color: whitesmoke;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+
+    .skills .fila{
+      
+        display: flex;
+        margin: 15px;
+        width: 1200px;
+        justify-content: space-around;
+    }
+
+ .skills .fila .col h3{
+    color: #5c6898;
+    font-weight: 600;
+
+ }
+
+ .skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #4c5477;
+ }
+
+ .skills .skill .barra-skill{
+    height: 8px;
+    width: 300px;
+    background-color: #5c6898;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 15px;
+ }
+
+ .skills .skill .progreso{
+    background-color: #fdb3ca;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+ }
+
+ .skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #fdb3ca;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+    
+ }
+
+
+ /*Clases que se agregan dinamicamente con Javascript*/
+ .skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+
+ }
+
+ @keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+ }
+
+ .skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+
+ }
+
+ @keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 80%;}
+ }
+
+ .skills .skill .redux{
+    width: 0%;
+    animation: 2s redux forwards;
+
+ }
+
+ @keyframes redux {
+    0%{width: 0%;}
+    100%{width: 60%;}
+ }
+
+ .skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+
+ }
+
+ @keyframes java {
+    0%{width: 0%;}
+    100%{width: 40%;}
+ }
+
+ .skills .skill .express{
+    width: 0%;
+    animation: 2s express forwards;
+
+ }
+
+ @keyframes express {
+    0%{width: 0%;}
+    100%{width: 70%;}
+ }
+
+
+ .skills .skill .photo{
+    width: 0%;
+    animation: 2s photo forwards;
+
+ }
+
+ @keyframes photo {
+    0%{width: 0%;}
+    100%{width: 90%;}
+ }
+
+ .skills .skill .team{
+    width: 0%;
+    animation: 2s team forwards;
+
+ }
+
+ @keyframes team {
+    0%{width: 0%;}
+    100%{width: 85%;}
+ }
+
+ .skills .skill .creat{
+    width: 0%;
+    animation: 2s creat forwards;
+
+ }
+
+ @keyframes creat {
+    0%{width: 0%;}
+    100%{width: 95%;}
+ }
+
+ /*PORTFOLIO*/
+
+.portfolio{
+    padding: 50px 20px;
+    color: #4c5477;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2{
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+   
+    color: #5c6898;
+   
+}
+
+.portfolio .fila{
+    display: flex;
+    
+    text-align: center;
+}
+
+.portfolio .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.portfolio .fila .col h3{
+ font-weight: 600;
+ margin-bottom: 25px;
+}
+
+.portfolio .fila .izquierda{
+    border-right: 2px solid #5c6898;
+   }
+
+   .portfolio .fila .derecha{
+    border-left: 2px solid #5c6898;
+   }
+
+   .portfolio .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color:#5c6898 ;
+    border-radius: 25px;
+    color: whitesmoke;
+    position: relative;
+    font-size: 15px;
+   }
+
+   .portfolio .fila .item:hover{
+   
+    background-color:#d1d5fa;
+    border: 3px solid #4c5477;
+    color: #5c6898;
+    
+   }
+
+   .portfolio .fila .item h4{
+   font-size: 20px;
+   margin-bottom: 10px;
+   }
+
+
+   .portfolio .fila .col .texto p{
+   font-weight: 600;
+   font-size: 17px;
+    }
+ 
+
+
+
