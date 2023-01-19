@@ -24,7 +24,7 @@ html{
 
 body{
     background-color: #d1d5fa;
-    
+    overflow-x: hidden;
 }
 
 
@@ -508,5 +508,140 @@ flex-wrap: wrap;
     }
  
 
+    .projects .contenido-seccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .contenido-seccion h2{
+       
+        width: 150px;
+        text-align: center;
+        margin: 15px;
+        background-color: #5c6898;
+        color: whitesmoke;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+
+    .projects .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+ 
+    .projects .galeria .proyecto{
+        position: relative;
+        max-width: 340px;
+        height: fit-content;
+        margin: 10px;
+        cursor: pointer;
+       
+    }
+
+    .projects .galeria .proyecto img{
+        width: 100%;
+        display: block;
+    }
+
+    .projects .galeria .proyecto h3{
+       font-weight: 700;
+       color: #4c5477 ;
+       transition: 1s;
+       
+    }
+
+    .projects .galeria .proyecto .overlay{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: linear-gradient(rgba(140, 227, 210, 0.8), rgba(237, 245, 243, 0.867));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+        letter-spacing: 3px;
+        opacity: 0;
+    }
 
 
+    .projects .galeria .proyecto .overlay:hover{
+       opacity: 1;
+    }
+
+    /*CONTAC ME */
+
+    .contacto{
+    background-color: #5c6898;
+        color: whitesmoke;
+        margin: 50px 0 0 0;
+        padding: 40px 0;
+    }
+
+    .contacto .contenido-contacto{
+
+       min-width: 1100px; 
+       margin: auto;
+
+    }
+
+    .contacto .contenido-contacto h2{
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .contacto .fila{
+        display: flex;
+       
+        justify-content: center;
+       
+    }
+
+    .contacto .fila .col{
+        width: 50%;
+        padding: 10px;
+        position: relative;
+      
+    }
+
+    .contacto .fila .col input, .contacto .fila .col textarea{
+       display: flex;
+       width: 100%;
+       padding: 18px;
+       border: none;
+       margin-bottom: 20px;
+       background-color: #d1d5fa;
+       border-radius: 5px;
+       color: #4c5477;
+       font-size: 18px;
+       ;
+    }
+
+    .contacto .fila .col .centrar {
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .contacto button{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #d1d5fa;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-weight: 700;
+        color: whitesmoke;
+        font-size: 20px;
+        
+       
+    }
+
+    .contacto button:hover{
+        background-color: #a9dfe2;
+        color: #5c6898;
+        border: none;
+    }
