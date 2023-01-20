@@ -633,7 +633,7 @@ flex-wrap: wrap;
        
     }
 
-    .contacto button{
+    .contacto .button{
         cursor: pointer;
         background-color: transparent;
         border: 2px solid #d1d5fa;
@@ -646,7 +646,7 @@ flex-wrap: wrap;
        
     }
 
-    .contacto button:hover{
+    .contacto .button:hover{
         background-color: #a9dfe2;
         color: #5c6898;
         border: none;

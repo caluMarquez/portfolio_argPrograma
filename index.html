@@ -431,17 +431,20 @@
             <div class="fila">
 
                 <!--Formulario-->
-                <div class="col">
-                    <input type="text" name="name" value="" placeholder="Name"/>
-                    <input type="text" name="mail" value="" placeholder="E-mail"/>
-                    <textarea cols="30" rows='10' name="message" value="" placeholder="Message..."></textarea>
-                    <div class="centrar">
-                        <button>
-                            Send <i class="ri-send-plane-fill"></i>
-                            <span class="overlay"></span>
+                <form class="col" id="form">
+                   
+                        <input type="text" name="name" value="" placeholder="Name" required/>
+                        <input type="text" name="mail" value="" placeholder="E-mail" required/>
+                        <textarea cols="30" rows='10' name="message" value="" placeholder="Message..." required></textarea>
+                        <div class="centrar">
+                            <button type="submit" id="button" class="button overlay" value="Send Email">Send
+                                <i class="ri-send-plane-fill"></i>
+                                <span class="overlay"></span>
                         </button>
-                    </div>
-                </div>
+                        </div>
+                    
+                    
+                </form>
 
 
             </div>
@@ -466,6 +469,12 @@
     </footer>
     </div>
 
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('ahnm4s8EnoFpZ9zSY')
+</script>
     <script src="index.js"></script>
 </body>
 
