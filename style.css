@@ -568,7 +568,9 @@ flex-wrap: wrap;
         letter-spacing: 3px;
         opacity: 0;
     }
-
+    .projects .galeria .proyecto .overlay a{
+      text-decoration: none;
+    }
 
     .projects .galeria .proyecto .overlay:hover{
        opacity: 1;
